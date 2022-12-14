@@ -92,8 +92,8 @@ h4 {
   display: grid;
   place-items: center;
   grid-template-columns: 1fr;
-  padding-top: 10rem;
-  gap: 3rem;
+  padding-top: 6rem;
+  gap: 4.5rem;
 }
 .countdown-container h1 {
   color: hsl(0deg, 0%, 100%);
@@ -216,7 +216,6 @@ h4 {
 .icons {
   display: flex;
   gap: 2rem;
-  margin-top: 18rem;
 }
 
 .datespan-wrapper {
@@ -228,10 +227,10 @@ h4 {
     overflow-x: hidden;
   }
   .countdown-container {
-    transform: scale(1.12);
+    transform: scale(1.05);
   }
   .container {
-    transform: scale(1.6);
+    transform: scale(1.4);
   }
 }
 @media screen and (max-width: 350px) {
