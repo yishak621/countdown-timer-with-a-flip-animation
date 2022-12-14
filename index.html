@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>yishak | Launch countdown timer</title>
+    <!--styles-->
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/normalize.css" />
+  </head>
+  <body>
+    <main>
+      <!--main container-->
+      <div class="countdown-container">
+        <h1>We're launching soon</h1>
+        <!--numbers container-->
+        <div class="container">
+          <!--start of each counter-->
+          <div class="container-segment">
+            <div class="segment">
+              <div class="flip-card" data-days-tens>
+                <div class="top">11</div>
+                <div class="bottom">00</div>
+              </div>
+            </div>
+            <span class="segment-title">Days</span>
+          </div>
+          <!--end of each counter-->
+
+          <!--start of each counter-->
+          <div class="container-segment">
+            <div class="segment">
+              <div class="flip-card" data-hours-tens>
+                <div class="top">00</div>
+                <div class="bottom">00</div>
+              </div>
+            </div>
+            <div class="segment-title">Hours</div>
+          </div>
+          <!--end of each counter-->
+          <!--start of each counter-->
+          <div class="container-segment">
+            <div class="segment">
+              <div class="flip-card" data-minutes-tens>
+                <div class="top">00</div>
+                <div class="bottom">00</div>
+              </div>
+            </div>
+            <div class="segment-title">Minutes</div>
+          </div>
+          <!--end of each counter-->
+          <!--start of each counter-->
+          <div class="container-segment">
+            <div class="segment">
+              <div class="flip-card" data-seconds-tens>
+                <div class="top">00</div>
+                <div class="bottom">00</div>
+              </div>
+            </div>
+            <div class="segment-title">Seconds</div>
+          </div>
+          <!--end of each counter-->
+        </div>
+        <div class="datespan"><!--dynamically added by JS--></div>
+        <div class="deadline"><!--dynamically added by JS--></div>
+        <div class="icons">
+          <img src="/images/icon-facebook.svg" alt="facebook" />
+          <img src="/images/icon-pinterest.svg" alt="pinterest" />
+          <img src="/images/icon-instagram.svg" alt="instagram" />
+        </div>
+      </div>
+    </main>
+    <script src="/script.js"></script>
+  </body>
+</html>

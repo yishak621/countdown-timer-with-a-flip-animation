@@ -1,0 +1,76 @@
+//countdown
+.countdown-container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  padding-top: 8rem;
+  h1 {
+    color: $White;
+  }
+  h1,
+  .datespan {
+    font-size: 1.05rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    font-weight: 400;
+  }
+}
+
+.datespan {
+  margin-top: 3rem;
+  text-align: center;
+  color: rgb(255, 24, 44);
+}
+.countdown-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.number-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+.number {
+  color: $Soft_red;
+  font-size: 3.5rem;
+  font-weight: 700;
+  position: absolute;
+}
+.number-cover__container {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 6.5rem;
+  height: 6.5rem;
+  z-index: 11;
+
+  display: grid;
+  place-items: center;
+
+  gap: 0;
+  grid-template-rows: 1fr 1fr;
+}
+hr {
+  max-height: 0.1em;
+}
+.number-cover {
+  display: flex;
+  gap: 0.1em;
+  width: 6.5rem;
+  height: 3.25rem;
+  // border: 1px solid white;
+  border-radius: 10px;
+  background-color: $Dark_desaturated_blue;
+}
+
+.number-desc {
+  color: $Grayish_blue;
+  font-size: 0.5rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}

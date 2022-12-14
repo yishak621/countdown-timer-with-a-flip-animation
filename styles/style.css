@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500&family=Red+Hat+Text:wght@700&display=swap");
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Red Hat Text", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-image: url(/images/pattern-hills.svg), url(/images/bg-stars.svg);
+  background-color: #211a29;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Red Hat Text", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1.125rem;
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 894px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  h1,
+h2,
+h3,
+h4 {
+    line-height: 1;
+  }
+}
+.tik-tok {
+  opacity: 0;
+}
+
+.countdown-container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  padding-top: 10rem;
+  gap: 3rem;
+}
+.countdown-container h1 {
+  color: hsl(0deg, 0%, 100%);
+}
+.countdown-container h1,
+.countdown-container .datespan {
+  font-size: 1.05rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.datespan {
+  margin-top: 3rem;
+  margin: 0 1.5rem;
+  text-align: center;
+  color: rgb(255, 24, 44);
+}
+
+.container {
+  display: flex;
+  gap: 0.8em;
+  justify-content: center;
+}
+
+.container-segment {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  align-items: center;
+}
+
+.segment {
+  display: flex;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.segment-title {
+  color: hsl(237deg, 18%, 59%);
+  font-size: 0.5em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.flip-card {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  color: hsl(345deg, 95%, 68%);
+  height: 3.75rem;
+  width: 4.35rem;
+}
+
+.top,
+.bottom,
+.flip-card .top-flip,
+.flip-card .bottom-flip {
+  height: 0.75em;
+  line-height: 1;
+  padding: 0.25em;
+  overflow: hidden;
+  font-size: 2.5rem;
+  border-radius: 7px;
+}
+
+.top,
+.flip-card .top-flip {
+  background-color: hsl(236deg, 21%, 26%);
+  border-bottom: 1px solid yellow;
+}
+
+.bottom,
+.flip-card .bottom-flip {
+  background-color: hsl(236deg, 21%, 26%);
+  display: flex;
+  align-items: flex-end;
+}
+
+.flip-card .top-flip {
+  position: absolute;
+  width: 100%;
+  -webkit-animation: flip-top 250ms ease-in;
+          animation: flip-top 250ms ease-in;
+  transform-origin: bottom;
+}
+
+@-webkit-keyframes flip-top {
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+
+@keyframes flip-top {
+  100% {
+    transform: rotateX(90deg);
+  }
+}
+.flip-card .bottom-flip {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  -webkit-animation: flip-bottom 250ms ease-out 250ms;
+          animation: flip-bottom 250ms ease-out 250ms;
+  transform-origin: top;
+  transform: rotateX(90deg);
+}
+
+@-webkit-keyframes flip-bottom {
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes flip-bottom {
+  100% {
+    transform: rotateX(0deg);
+  }
+}
+.icons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 18rem;
+}
+
+.datespan-wrapper {
+  color: yellow;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+  .countdown-container {
+    transform: scale(1.12);
+  }
+  .container {
+    transform: scale(1.6);
+  }
+}
+@media screen and (max-width: 350px) {
+  .countdown-container {
+    transform: scale(0.8);
+  }
+  .container {
+    transform: scale(0.8);
+  }
+}/*# sourceMappingURL=style.css.map */
