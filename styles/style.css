@@ -230,7 +230,7 @@ h4 {
     transform: scale(1.05);
   }
   .container {
-    transform: scale(1.4);
+    transform: scale(1.8);
   }
 }
 @media screen and (max-width: 350px) {
