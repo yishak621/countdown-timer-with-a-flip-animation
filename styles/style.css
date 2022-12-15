@@ -163,7 +163,7 @@ h4 {
 .top,
 .flip-card .top-flip {
   background-color: hsl(236deg, 21%, 26%);
-  border-bottom: 1px solid yellow;
+  border-bottom: 2px solid hsl(236deg, 21%, 26%);
 }
 
 .bottom,
