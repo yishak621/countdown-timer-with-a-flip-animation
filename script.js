@@ -31,7 +31,7 @@ const datespan = document.querySelector('.datespan');
 //Calculation
 //LOGIC-lets say we want the countdown for 2023 march
 //new Date(year, monthIndex, day, hours, minutes, seconds, milliseconds)
-let futuredate = new Date(2023, 2, 21, 23, 55, 41);
+let futuredate = new Date(2024, 2, 21, 23, 55, 41);
 const futureTime = futuredate.getTime(); //in milisecond
 
 //Daynamically adding the datespan textcontent
